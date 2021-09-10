@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher JS</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-dark bg-gradient">
+      <a class="navbar-brand mx-auto text-light cTitle" href="index.html">Caesar Cipher</a>
+    </nav>
+  </header>
+  <br>
+  <main>
+    <div class="spinner-grow text-primary " role="status">
+    </div>
+    <div>
+      <h2>Input Text <span class="badge bg-primary">Original Text</span></h2>
+      <textarea class="form-control" id="inputField" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+      <label for="kInput">Key</label>
+      <input id="kInput" type="number" value="0">
+      <button onclick="btnEncrypt()" id="eBtn" type="button" class="btn btn-primary">Encrypt</button>
+      <button onclick="btnDecrypt()" id="dBtn" type="button" class="btn btn-danger">Decrypt</button>
+      <button onclick="btnResetKey()" id="resetKey" type="button" class="btn btn-warning">Reset Key</button>
+      <button onclick="btnFieldReset()" id="fieldReset" type="button" class="btn btn-warning">Reset Fields</button>
+      <button onclick="btnResetAll()" id="resetAll" type="button" class="btn btn-success">Reset All</button>
+    </div>
+    <br>
+    <div class="spinner-grow text-danger" role="status">
+    </div>
+    <div>
+      <h2>Output Text <span class="badge bg-danger">Encrypted</span></h2>
+      <textarea readonly class="form-control" id="outputField" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+      <a href="https://en.wikipedia.org/wiki/Caesar_cipher" class="btn btn-dark aBtn" type="button">About</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Marius P 2021</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
